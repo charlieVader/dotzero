@@ -21,9 +21,13 @@ else
 fi
 
 # Homebrew
-header "Install Homebrew ..."
+header "Install homebrew ..."
+source ./homebrew/install_brew.sh
+
+# Homebrew packages
+header "Brewing ..."
 source ./homebrew/brew.sh
 
-# Homebrew
-header "Install rbenv ..."
-source rbenv.sh
+# Ruby
+header "Install ruby ..."
+source ./rbenv/setup_ruby.sh
