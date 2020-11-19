@@ -1,0 +1,11 @@
+function myip() # Print my public IP Address and copy it to the clipboard
+{
+  dig +short myip.opendns.com @resolver1.opendns.com | tr -d '\n' | pbcopy;
+  echo `pbpaste | xargs`;
+}
+
+# Create a new directory and enter it
+function mkd() # Create a new directory and enter it
+{
+	mkdir -p "$@" && cd "$_";
+}

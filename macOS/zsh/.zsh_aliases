@@ -1,0 +1,4 @@
+# Custom aliases
+
+alias sos="grep "^function" ~/.zsh_functions | sed 's/function/+/g' | sed 's/() #/ - /g'"
+alias reshell="source $HOME/.zshrc"
