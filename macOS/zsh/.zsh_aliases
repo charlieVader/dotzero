@@ -1,4 +1,7 @@
 # Custom aliases
 
+# Show the list of functions delcared in .zsh_functions
 alias sos="grep "^function" ~/.zsh_functions | sed 's/function/+/g' | sed 's/() #/ - /g'"
+
+# Source .zshrc
 alias reshell="source $HOME/.zshrc"
