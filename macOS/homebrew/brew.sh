@@ -23,10 +23,13 @@ brew install circleci
 
 # SpeedTest
 brew tap teamookla/speedtest
-brew "teamookla/speedtest/speedtest"
+brew install teamookla/speedtest/speedtest
 
 # Fonts
 
 brew tap homebrew/cask
 brew tap homebrew/cask-fonts
-cask "font-hack-nerd-font"
+bew cask install font-hack-nerd-font
+
+# Final cleanup
+brew cleanup

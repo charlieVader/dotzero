@@ -11,7 +11,7 @@ else
 fi
 
 # xcode-select
-header "Install xcode-select..."
+header "Install xcode-select ..."
 xcode-select -p > /dev/null
 if [[ $? != 0 ]] 
 then
@@ -21,5 +21,9 @@ else
 fi
 
 # Homebrew
-header "Install Homebrew..."
+header "Install Homebrew ..."
 source ./homebrew/brew.sh
+
+# Homebrew
+header "Install rbenv ..."
+source rbenv.sh

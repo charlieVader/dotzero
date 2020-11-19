@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
 function header() {
-  echo "$(tput sgr 0 1)$(tput setaf 6)$1$(tput sgr0)"
+  printf "\n$(tput sgr 0 1)$(tput setaf 6)$1$(tput sgr0)\n"
 }
 
 function log() {
-  printf " \xE2\x9C\x94 $1\n"
+  printf " \xE2\x9C\x94 $(tput setaf 2)$1$(tput sgr0)\n"
 }
 
 function error() {
-  echo " x $(tput setaf 1)$1$(tput sgr0)"
+  printf " x $(tput setaf 1)$1$(tput sgr0)\n"
 }
